@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: 0BSD
+
+# TODO: https://www.openwall.com/lists/musl/2024/06/29/1
+
+target = riscv32-linux-musl
+arch = riscv
+
+# GCC does not infer the ilp32f ABI from the ISA, unlike ilp32/ilp32d.
+gcc_target_flags += --with-abi=ilp32f
+gcc_target_flags += --with-arch=rv32imafc
+
+include toolchain.mk

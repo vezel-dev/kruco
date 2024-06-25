@@ -1,0 +1,24 @@
+[submodule "pkg/binutils-gdb"]
+	path = pkg/binutils-gdb
+    url = https://sourceware.org/git/binutils-gdb.git
+    shallow = true
+[submodule "pkg/gcc"]
+	path = pkg/gcc
+	url = https://gcc.gnu.org/git/gcc.git
+    shallow = true
+[submodule "pkg/glibc"]
+	path = pkg/glibc
+    url = https://sourceware.org/git/glibc.git
+    shallow = true
+[submodule "pkg/linux"]
+	path = pkg/linux
+    url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+    shallow = true
+[submodule "pkg/musl"]
+	path = pkg/musl
+    url = git://git.musl-libc.org/musl
+    shallow = true
+[submodule "pkg/newlib-cygwin"]
+	path = pkg/newlib-cygwin
+	url = https://sourceware.org/git/newlib-cygwin.git
+    shallow = true

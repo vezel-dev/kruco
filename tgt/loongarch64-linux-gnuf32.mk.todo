@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: 0BSD
+
+# TODO: This currently hits a GCC ICE when building libgcc.
+
+arch = loongarch
+
+include toolchain.mk

@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: 0BSD
+
+# TODO: This currently fails to link musl.
+
+arch = loongarch
+
+include toolchain.mk

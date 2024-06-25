@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: 0BSD
+
+# TODO: GAS does not enable CSSC as GCC expects, so the build fails.
+
+target = aarch64-linux-musl
+arch = arm64
+
+gcc_target_flags = --with-arch=armv9.4-a
+
+include toolchain.mk
