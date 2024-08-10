@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: 0BSD
 
+# TODO: This currently fails to link glibc.
+
 arch = sh
 
 include toolchain.mk
