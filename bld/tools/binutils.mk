@@ -4,22 +4,34 @@ binutils_flags += --build=$(build)
 binutils_flags += --target=$(target)
 binutils_flags += --prefix=$(prefix)
 binutils_flags += --program-prefix=$(toolchain)-
+binutils_flags += --with-babeltrace
+binutils_flags += --with-debuginfod
+binutils_flags += --with-expat
+binutils_flags += --with-gdbtk
+binutils_flags += --with-guile
 binutils_flags += --with-jansson
+binutils_flags += --with-lzma
 binutils_flags += --with-msgpack
+binutils_flags += --with-python
 binutils_flags += --with-sysroot=$(sysroot)
 binutils_flags += --with-system-libunwind
 binutils_flags += --with-system-zlib
+binutils_flags += --with-xxhash
 binutils_flags += --with-zstd
 binutils_flags += --enable-colored-disassembly
 binutils_flags += --enable-deterministic-archives
 binutils_flags += --enable-f-for-ifunc-symbols
 binutils_flags += --enable-host-bind-now
 binutils_flags += --enable-host-pie
+binutils_flags += --enable-libbacktrace
+binutils_flags += --enable-libctf
 binutils_flags += --disable-multilib
+binutils_flags += --enable-plugins
 binutils_flags += --enable-shared
-
-# TODO: https://sourceware.org/bugzilla/show_bug.cgi?id=31399
-binutils_flags += --disable-gdb
+binutils_flags += --enable-sim
+binutils_flags += --enable-source-highlight
+binutils_flags += --enable-threading
+binutils_flags += --enable-tui
 
 binutils_target_flags ?=
 
