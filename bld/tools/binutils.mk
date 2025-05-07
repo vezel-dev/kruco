@@ -11,7 +11,7 @@ binutils_flags += --with-gdbtk
 binutils_flags += --with-guile
 binutils_flags += --with-jansson
 binutils_flags += --with-lzma
-binutils_flags += --with-msgpack
+# TODO: Re-enable --with-msgpack at some point.
 binutils_flags += --with-python
 binutils_flags += --with-sysroot=$(sysroot)
 binutils_flags += --with-system-libunwind
